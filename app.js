@@ -22,6 +22,8 @@ app.post("/payment-methods", function (req, res) {
   }, function (err, result) {
     console.log(err);
     console.log(result);
+
+    res.send(err + " " + result);
   });
 });
 app.get('/', function(request, response) {
